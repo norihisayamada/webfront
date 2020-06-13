@@ -1,0 +1,16 @@
+header{
+    margin-top: 30px;
+    color: royalblue;
+}
+
+hr{
+    border-width: 3px;
+    border-color: royalblue;
+}
+
+h1{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    
+}

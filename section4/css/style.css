@@ -12,5 +12,9 @@ h1{
     font-size: 18px;
     font-weight: bold;
     margin: 0;
-    
+
+}
+
+.align-right{
+    text-align: right;
 }

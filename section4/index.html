@@ -19,10 +19,10 @@
     <div class="container">
         <header>
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-6 col-sm-6">
                     <h1>ご利用アンケート</h1>
                 </div> 
-                <div class="col-sm-6">
+                <div class="col-sm-6 align-right">
                      <a href="/">HOMEへもどる</a>
                 </div>
             </div>
@@ -30,9 +30,85 @@
     </div>
     
         <hr>
-        
+        <div class="container">
+            <form action="https://book.h2o-space.com/html/form.php" method="POST" class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <p>この度は、お問い合わせありがとうございます。御用の方は下記フォームにご記入頂き送信して下さい。</p>
+
+                    <div class="form-group">                   
+                         <label for="name">お名前<span class="label label-warning">必須</span></label>
+                        <input type="text" id="name" name="name"
+                        class="form-control" placeholder="例）山田　太郎">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="job">ご職業<span class="label label-warning">必須</span></label>
+                        <select id="job" name="job" class="form-control">
+                            <option value="">選択してください</option>
+                            <option value="会社員">会社員</option>
+                            <option value="小学生低学年">小学生低学年</option>
+                            <option value="小学生">小学生</option>
+                            <option value="中学生">中学生</option>
+                            <option value="公務員">公務員</option>
+
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>知りたい情報（複数回答可能）</label>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="q1" value="html">
+                                HTML
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="q1" value="CSS">
+                                CSS
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="q1" value="Javascript">
+                                JavaScript
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="q1" value="python">
+                                Python
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>理解度はいかがですか</label>
+                        <div>
+                            <label class="radio-inline">
+                                <input type="radio" name="q2" value="1">理解できなかった
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="q2" value="2">大体できた
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="q2" value="3">理解できた
+                            </label>
+                            <lavel class="radio-inline">
+                                <input type="radio" name="q2" value="4" checked>回答しない
+                            </lavel>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">ご意見</label>
+                        <textarea name="message" rows="10"
+                        class="form-control"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-default">送信</button>
+
+                </div>
+             </form>
+        </div>
         <hr>
-        
+
 <div class="container">
         <footer>
             <p>&copy; H20 space</p>

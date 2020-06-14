@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_Photos</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header>
+        <h1>My_Photos</h1>
+    </header>
+    <div class="container">
+        <div id="img_unit">
+            <div class="photo">
+                <img src="img/img01.jpg">
+                <div class="inner"><p>コメント１<span>nickname</span></p></div>
+            </div>
+            <div class="photo">
+                <img src="img/img02.jpg">
+                <div class="inner"><p>コメント２<span>nickname</span></p></div>
+            </div>
+            <div class="photo">
+                <img src="img/img03.jpg">
+                <div class="inner"><p>コメント３<span>nickname</span></p></div>
+            </div>
+            <div class="photo">
+                <img src="img/img04.jpg">
+                <div class="inner"><p>コメント４<span>nickname</span></p></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var images = [
+            {
+                "path": "img/img01.jpg",
+                "name":"name01",
+                "caption":"コメント１"
+            },
+            {
+                "path":"img/img02.jpg",
+                "name":"name02",
+                "caption":"コメント２"
+            }
+        ];
+       // alert(images[1].caption);
+
+       var pref =[ '北海道', '青森県','岩手県'];
+       alert(pref[2])
+
+
+    var img;
+    img = document.createElement('img'); //createElement()
+    img.setAttribute('src', images[0].path);
+
+    document.getElementById('img_unit').appendChild(img);
+
+//次回　section56 から
+
+    </script>
+</body>
+</html>

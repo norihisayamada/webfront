@@ -17,7 +17,14 @@
     </header>
     <div class="container">
        <script>
-           document.write(' <p class="data">20xx/01/23</p>');
+           //日付を表示する
+           /*後で今日の日付に変えます*/
+           //document.write(' <p class="data">20xx/01/23</p>');
+           
+           var today = new Date(); //インスタンス化している
+           var todayHtml = today.getFullYear() + '/' + (today.getMonth() + 1) + '/' + today.getDate();
+           document.write('<p class="date">' + todayHtml + '</p>');
+         
        </script>
     </div>
 </body>

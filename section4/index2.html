@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>マイご利用アンケート</title>
-    
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
         integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
@@ -43,11 +43,11 @@
                 <p>この度は、お問い合わせありがとうございます。御用の方は下記フォームにご記入頂き送信して下さい。</p>
 
                 <div class="form-group">
-                    <label for="name">お名前</label>
+                    <label for="name">お名前　<span class="label label-danger">必須</span></label>
                     <input type="text" id="name" name="name" class="form-control" placeholder="例）山田　太郎">
                 </div>
                 <div class="form-group">
-                    <label for="job">ご職業</label>
+                    <label for="job">ご職業　<span class="label label-danger">必須</span></label>
                     <select id="job" name="job" class="form-control">
                         <option value="0">選択してください</option>
                         <option value="1">会社員</option>
@@ -95,8 +95,11 @@
                         </lavel>
                     </div>
                 </div>
-
+            <div class="form-group">
+                <label for="message">ご意見</label>
+                <textarea name="message" rows="5" class="form-control"></textarea>
             </div>
+            <button type="submit" class="btn btn-default">送信</button>
         </form>
     </div>
     <hr>
